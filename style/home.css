@@ -1,6 +1,14 @@
+body {
+    overflow-x: hidden; /* Oculta el scroll horizontal */
+    margin-left: 0;
+}
+
 #container {
     display: flex;
     flex-direction: column;
+         max-width: 100%; /* Ajusta el ancho máximo según el diseño */
+        /* Otros estilos... */
+    
 }
 
 #hero {
@@ -10,18 +18,34 @@
 nav {
     background: rgb(153, 153, 153);
     width: 100vw;
+    border: 2px solid green;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     flex-direction: row;
+    
     padding: 0; 
     margin: 0;
+    justify-content: center;
+
 }
 
 nav li {
-    margin-right: 8vw; /* Ajusta el margen entre elementos */
-    margin-left: 8vw;
+    /* margin-right: 8vw; /* Ajusta el margen entre elementos */
+   /*  margin-left: 8vw; */
     font-size: 1vw;
+    border: 1px solid black;
+  /*   padding-right: 7.8vw;
+    padding-left: 7.8vw; */
+    flex: 1;
+    margin: 2px 1px 2px 1px;
+    text-align: center;
+    
+  
+}
+
+nav li a {
+    color: white;
 }
