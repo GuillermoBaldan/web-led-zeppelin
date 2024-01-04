@@ -66,11 +66,11 @@ nav li a {
     color: white;
     text-decoration-color: blue;
     font-size: 1.75rem ;
-    border: 1px solid yellow;
+   /*  border: 1px solid yellow; */
 }
 
 nav ul {
-    border: 1px solid purple;
+  /*   border: 1px solid purple; */
 }
 
 article {
@@ -83,37 +83,35 @@ article {
 
 /* SUBMENU CSS */
 /* Estilos para el submenu */
-nav ul ul {
-    display: none; /* Ocultar el submenu por defecto */
-    position: absolute; /* Posición absoluta para colocar el submenu */
-    background-color: rgb(153, 153, 153); /* Color de fondo del submenu */
-    border: 1px solid #ccc; /* Borde del submenu */
-    padding: 10px; /* Espaciado interno del submenu */
-    width: max-content; /* Ancho máximo del submenu */
-}
 
-/* Estilos para el hover del elemento de lista GRUPO */
-nav ul li:hover > ul {
-    display: block; /* Mostrar el submenu al pasar el ratón por encima del elemento GRUPO */
-    /* width: inherit; */
-
-
-}
-
-/* Estilos para los elementos del submenu */
-nav ul ul li {
-    display: flex;
-    /* width: 24vw; *//* Ancho del submenu igual al 100% */
-    margin-bottom: 5px;
-    flex: 1; /* Espacio entre elementos del submenu */
-}
-
-/* Eliminar subrayado de los elementos del submenu */
-nav ul ul li a {
-    text-decoration: none; /* Eliminar subrayado */
-}
-
-nav li ul{
-    width: inherit;
-}
-
+/* Estilos para el submenu */
+nav ul li {
+    position: relative; /* Posición relativa para el elemento padre */
+  }
+  
+  nav ul li .submenu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Posiciona el submenu debajo del elemento padre */
+    left: 0; /* Alinea el submenu con el borde izquierdo del padre */
+    background-color: rgb(153, 153, 153);
+    z-index: 1; /* Asegura que el submenu esté sobre otros elementos */
+    padding: 0;
+    width: 100%; /* El submenu toma el ancho del elemento padre */
+  }
+  
+  nav ul li:hover .submenu {
+    display: flex; /* Cambio a display flex cuando se hace hover */
+    flex-direction: column; /* Elementos en dirección vertical */
+  }
+  
+  nav ul li .submenu a {
+    background-color: rgb(153, 153, 153);
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration-line: none;
+    font-size: 1.5rem;
+    text-align: start;
+  }
+  
