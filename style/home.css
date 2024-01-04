@@ -34,7 +34,7 @@ body, div, p {
 nav {
     background: rgb(153, 153, 153);
     width: 100vw;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 nav ul {
@@ -66,4 +66,12 @@ nav li a {
     color: white;
     text-decoration-color: blue;
     font-size: 1.75rem ;
+}
+
+article {
+    color: white;
+    font-size: 2rem;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    text-align: justify;
 }
