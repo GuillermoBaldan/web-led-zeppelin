@@ -1,0 +1,114 @@
+body {
+    overflow-x: hidden; /* Oculta el scroll horizontal */
+    margin-left: 0;
+    background-color: black;
+}
+
+/* reseteo márgenes y rellenos para evitar scroll vertical */
+body, div, p {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+     /* max-width: 100%; */ /* Ajusta el ancho máximo según el diseño */
+   /* position: relative;
+    overflow: hidden; */
+   /*  border: 1px solid red; */
+    height: 100vh;
+}
+
+#hero {
+    width: 100vw;
+}
+
+#banner {
+    width: 100vw;
+    flex-grow: 1;
+    /* height: 100%;
+    display: block; */
+}
+
+nav {
+    background: rgb(153, 153, 153);
+    width: 100vw;
+    /* border: 2px solid green; */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    
+    padding: 0; 
+    margin: 0;
+    justify-content: center;
+
+}
+
+nav li {
+    /* margin-right: 8vw; /* Ajusta el margen entre elementos */
+   /*  margin-left: 8vw; */
+    font-size: 1vw;
+    border: 1px solid black;
+  /*   padding-right: 7.8vw;
+    padding-left: 7.8vw; */
+    flex: 1;
+    margin: 2px 1px 2px 1px;
+    text-align: center;
+    
+  
+}
+
+nav li a {
+    color: white;
+    text-decoration-color: blue;
+    font-size: 1.75rem ;
+    border: 1px solid yellow;
+}
+
+nav ul {
+    border: 1px solid purple;
+}
+
+article {
+    color: white;
+    font-size: 2rem;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    text-align: justify;
+}
+
+/* SUBMENU CSS */
+/* Estilos para el submenu */
+/* Resto de estilos */
+
+/* Estilos para el submenu */
+nav ul li {
+    position: relative; /* Posición relativa para el elemento padre */
+  }
+  
+  nav ul li .submenu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Posiciona el submenu debajo del elemento padre */
+    left: 0; /* Alinea el submenu con el borde izquierdo del padre */
+    background-color: #f9f9f9;
+    z-index: 1; /* Asegura que el submenu esté sobre otros elementos */
+    padding: 0;
+    width: 100%; /* El submenu toma el ancho del elemento padre */
+  }
+  
+  nav ul li:hover .submenu {
+    display: flex; /* Cambio a display flex cuando se hace hover */
+    flex-direction: column; /* Elementos en dirección vertical */
+  }
+  
+  nav ul li .submenu a {
+    color: black;
+    padding: 10px;
+    display: block;
+  }
+  
