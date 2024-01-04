@@ -75,3 +75,28 @@ article {
     margin-right: 10vw;
     text-align: justify;
 }
+
+/* SUBMENU CSS */
+/* Estilos para el submenu */
+nav ul ul {
+    display: none; /* Ocultar el submenu por defecto */
+    position: absolute; /* Posición absoluta para colocar el submenu */
+    background-color: rgb(153, 153, 153); /* Color de fondo del submenu */
+    border: 1px solid #ccc; /* Borde del submenu */
+    padding: 10px; /* Espaciado interno del submenu */
+}
+
+/* Estilos para el hover del elemento de lista GRUPO */
+nav ul li:hover > ul {
+    display: block; /* Mostrar el submenu al pasar el ratón por encima del elemento GRUPO */
+    text-decoration-line: none;
+
+}
+
+/* Estilos para los elementos del submenu */
+nav ul ul li {
+    width: 100%; /* Ancho del submenu igual al 100% */
+    margin-bottom: 5px; /* Espacio entre elementos del submenu */
+}
+
+/* Otros estilos... */
