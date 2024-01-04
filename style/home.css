@@ -89,7 +89,7 @@ nav ul ul {
 /* Estilos para el hover del elemento de lista GRUPO */
 nav ul li:hover > ul {
     display: block; /* Mostrar el submenu al pasar el ratón por encima del elemento GRUPO */
-    text-decoration-line: none;
+
 
 }
 
@@ -99,4 +99,8 @@ nav ul ul li {
     margin-bottom: 5px; /* Espacio entre elementos del submenu */
 }
 
-/* Otros estilos... */
+/* Eliminar subrayado de los elementos del submenu */
+nav ul ul li a {
+    text-decoration: none; /* Eliminar subrayado */
+}
+
