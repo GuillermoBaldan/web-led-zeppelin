@@ -66,6 +66,11 @@ nav li a {
     color: white;
     text-decoration-color: blue;
     font-size: 1.75rem ;
+    border: 1px solid yellow;
+}
+
+nav ul {
+    border: 1px solid purple;
 }
 
 article {
@@ -84,23 +89,31 @@ nav ul ul {
     background-color: rgb(153, 153, 153); /* Color de fondo del submenu */
     border: 1px solid #ccc; /* Borde del submenu */
     padding: 10px; /* Espaciado interno del submenu */
+    width: max-content; /* Ancho máximo del submenu */
 }
 
 /* Estilos para el hover del elemento de lista GRUPO */
 nav ul li:hover > ul {
     display: block; /* Mostrar el submenu al pasar el ratón por encima del elemento GRUPO */
+    /* width: inherit; */
 
 
 }
 
 /* Estilos para los elementos del submenu */
 nav ul ul li {
-    width: 100%; /* Ancho del submenu igual al 100% */
-    margin-bottom: 5px; /* Espacio entre elementos del submenu */
+    display: flex;
+    /* width: 24vw; *//* Ancho del submenu igual al 100% */
+    margin-bottom: 5px;
+    flex: 1; /* Espacio entre elementos del submenu */
 }
 
 /* Eliminar subrayado de los elementos del submenu */
 nav ul ul li a {
     text-decoration: none; /* Eliminar subrayado */
+}
+
+nav li ul{
+    width: inherit;
 }
 
