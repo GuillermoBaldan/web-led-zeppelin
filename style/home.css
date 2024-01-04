@@ -1,17 +1,22 @@
 body {
     overflow-x: hidden; /* Oculta el scroll horizontal */
     margin-left: 0;
+    background-color: black;
 }
 
 #container {
     display: flex;
     flex-direction: column;
-         max-width: 100%; /* Ajusta el ancho máximo según el diseño */
-        /* Otros estilos... */
+     max-width: 100%; /* Ajusta el ancho máximo según el diseño */
+   
     
 }
 
 #hero {
+    width: 100vw;
+}
+
+#banner {
     width: 100vw;
 }
 
