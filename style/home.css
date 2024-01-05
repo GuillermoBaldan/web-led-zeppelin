@@ -247,6 +247,21 @@ article h3 {
   font-size: 1.25rem;
 }
 
+/* SECCIÓN IMÁGENES */
+#imagen-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las imágenes se ajusten en múltiples líneas */
+  justify-content: center; /* Centra horizontalmente las imágenes */
+  align-items: center; /* Centra verticalmente las imágenes */
+}
+
+#imagen-container img {
+  max-width: 100%; /* Asegura que las imágenes no excedan el ancho del contenedor */
+  width: 70vw;
+  height: auto; /* Mantiene la proporción al ajustar el ancho */
+  margin: 10px; /* Espacio entre las imágenes */
+}
+
 
 }
 
