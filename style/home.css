@@ -201,5 +201,37 @@ article h2 {
 article h3 {
   font-size: 1.25rem;
 }
+
+/* SECCIÓN DISCOGRAFÍA */
+#discs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+
+ .disc-container{
+  text-align: center; 
+  margin-top: 2vh; /* Espaciado superior */
+  margin-bottom: 2vh;
+ }
+
+ .disc-container img {
+  width: 40vw;
+  height: auto;
+ }
+
+.disc-container ol{
+  text-align: center;
+}
+
+ .disc-container ol li {
+  text-align: start;
+ }
+
+ h2{
+  font-size: 1.25rem;
+}
+
+
 }
 
