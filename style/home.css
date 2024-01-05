@@ -179,7 +179,7 @@ nav ul li {
 /* -------------------------------- VERSION MÓVIL -------------------------------- */
 @media screen and (max-width: 425px) {
   nav ul {
-    list-style: none;
+    list-style: none; 
     display: flex;
     flex-direction: column;
     
@@ -220,10 +220,25 @@ article h3 {
   height: auto;
  }
 
-.disc-container ol{
+ .song-list:target {
+  display: block;
+  color: white;
+  font-style: italic;
   text-align: center;
 }
 
+.song-list {
+  text-align: center; /* Centra el texto */
+  padding-left: 0;
+}
+
+.song-list li {
+  display: flex; /* Usamos flexbox para alinear los números al centro */
+  align-items: center; /* Alinea verticalmente los números */
+  justify-content: center; /* Alinea horizontalmente los números */
+  margin: 5px 0; /* Añade un espacio entre los elementos y elimina el margen lateral */
+  list-style-type: decimal;
+}
  .disc-container ol li {
   text-align: start;
  }
