@@ -91,10 +91,30 @@ justify-content: space-around;
 
 h2 {
   color: white;
+  
 }
 
-span {
+.discography {
+  text-align: center;
+}
+
+.disc-container span {
+  display: block;
+  text-align: center;
+}
+
+.disc-container span a {
+  color: blue;
+}
+
+.song-list {
+  display: none;
+}
+
+.song-list:target {
+  display: block;
   color: white;
+  font-style: italic;
 }
 
 
