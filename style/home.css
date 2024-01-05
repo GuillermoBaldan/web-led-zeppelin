@@ -176,3 +176,30 @@ nav ul li {
     text-align: start;
   }
   
+/* -------------------------------- VERSION MÓVIL -------------------------------- */
+@media screen and (max-width: 425px) {
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    
+    padding: 0; 
+    margin: 0;
+    justify-content: center;
+
+}
+
+article p {
+  font-size: 1.25rem;
+ 
+}
+
+article h2 {
+  font-size: 1.25rem;
+}
+
+article h3 {
+  font-size: 1.25rem;
+}
+}
+
