@@ -83,17 +83,19 @@ article {
 
 /* SECCIÓN IMÁGENES */
 #imagen-container{
-  text-align: center;
   width: 90vw;
   display: grid;
     grid-template-columns: repeat(auto-fill, minmax(5vw, 1fr)); /* Cada columna de tamaño mínimo de 200px */
     grid-auto-rows: 5vw; /* Altura mínima de las filas */
     grid-gap: 10vw; /* Espacio entre elementos */
+    padding-top: 4vh;
+    padding-left: 4vh;
+    padding-right: 4vh;
 }
   
 
 #imagen-container img {
-  width: 12vw;
+  width: 10vw;
   height: auto;
 
 }
