@@ -81,6 +81,24 @@ article {
     text-align: justify;
 }
 
+
+/* DISCOGRAFÍA */
+#discs-container {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+h2 {
+  color: white;
+}
+
+span {
+  color: white;
+}
+
+
+
 /* SUBMENU CSS */
 /* Estilos para el submenu */
 
