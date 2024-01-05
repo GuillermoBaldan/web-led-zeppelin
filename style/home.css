@@ -81,8 +81,22 @@ article {
     text-align: justify;
 }
 
+/* SECCIÓN IMÁGENES */
+#imagen-container{
+  display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(5vw, 1fr)); /* Cada columna de tamaño mínimo de 200px */
+    grid-auto-rows: 5vw; /* Altura mínima de las filas */
+    grid-gap: 10vw; /* Espacio entre elementos */
+}
+  
 
-/* DISCOGRAFÍA */
+#imagen-container img {
+  width: 12vw;
+  height: auto;
+
+}
+
+/* SECCIÓN DISCOGRAFÍA */
 #discs-container {
 display: flex;
 flex-direction: row;
